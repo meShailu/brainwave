@@ -2,6 +2,8 @@ import React from "react";
 import Section from "./Section";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
+import { BackgroundCircles, BottomLine, Gradrient } from "./design/Hero";
+import { ScrollParallax } from "react-just-parallax";
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className="container relative">
+      <div className="container relative" ref={parallaxref}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
             {" "}
