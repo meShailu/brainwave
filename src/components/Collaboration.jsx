@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./Section";
 import { collabContent } from "../constants";
 import { check } from "../assets";
+import Button from "./Button";
 
 const Collaboration = () => {
   return (
@@ -25,6 +26,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
+          <Button>Try It Now</Button>
         </div>
       </div>
     </Section>
